@@ -27,11 +27,11 @@ Partial Class edit
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_edit_add = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btn_edit_remove = New System.Windows.Forms.Button()
+        Me.btn_edit_find = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Destination = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Price = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -79,14 +79,14 @@ Partial Class edit
         Me.TextBox2.Size = New System.Drawing.Size(245, 20)
         Me.TextBox2.TabIndex = 6
         '
-        'Button2
+        'btn_edit_add
         '
-        Me.Button2.Location = New System.Drawing.Point(15, 435)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(245, 58)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Add Train"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_edit_add.Location = New System.Drawing.Point(15, 435)
+        Me.btn_edit_add.Name = "btn_edit_add"
+        Me.btn_edit_add.Size = New System.Drawing.Size(245, 58)
+        Me.btn_edit_add.TabIndex = 7
+        Me.btn_edit_add.Text = "Add Train"
+        Me.btn_edit_add.UseVisualStyleBackColor = True
         '
         'TextBox3
         '
@@ -104,23 +104,23 @@ Partial Class edit
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Max Seat"
         '
-        'Button3
+        'btn_edit_remove
         '
-        Me.Button3.Location = New System.Drawing.Point(278, 169)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(111, 105)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Remove Train"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_edit_remove.Location = New System.Drawing.Point(278, 169)
+        Me.btn_edit_remove.Name = "btn_edit_remove"
+        Me.btn_edit_remove.Size = New System.Drawing.Size(111, 105)
+        Me.btn_edit_remove.TabIndex = 10
+        Me.btn_edit_remove.Text = "Remove Train"
+        Me.btn_edit_remove.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_edit_find
         '
-        Me.Button4.Location = New System.Drawing.Point(278, 24)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(111, 105)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Find Train"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_edit_find.Location = New System.Drawing.Point(278, 24)
+        Me.btn_edit_find.Name = "btn_edit_find"
+        Me.btn_edit_find.Size = New System.Drawing.Size(111, 105)
+        Me.btn_edit_find.TabIndex = 11
+        Me.btn_edit_find.Text = "Find Train"
+        Me.btn_edit_find.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -157,11 +157,11 @@ Partial Class edit
         Me.ClientSize = New System.Drawing.Size(674, 513)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btn_edit_find)
+        Me.Controls.Add(Me.btn_edit_remove)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btn_edit_add)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ListBox1)
@@ -181,11 +181,11 @@ Partial Class edit
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_edit_add As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btn_edit_remove As Button
+    Friend WithEvents btn_edit_find As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Destination As DataGridViewTextBoxColumn
     Friend WithEvents Price As DataGridViewTextBoxColumn

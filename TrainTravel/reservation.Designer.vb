@@ -25,7 +25,7 @@ Partial Class reservation
         Me.txtbox_price = New System.Windows.Forms.TextBox()
         Me.cbox_reserve_seat_num = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_res_res = New System.Windows.Forms.Button()
         Me.cbox_destination = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -62,14 +62,14 @@ Partial Class reservation
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Seat Number"
         '
-        'Button1
+        'btn_res_res
         '
-        Me.Button1.Location = New System.Drawing.Point(277, 34)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 222)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Make Reservation"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_res_res.Location = New System.Drawing.Point(277, 34)
+        Me.btn_res_res.Name = "btn_res_res"
+        Me.btn_res_res.Size = New System.Drawing.Size(120, 222)
+        Me.btn_res_res.TabIndex = 4
+        Me.btn_res_res.Text = "Make Reservation"
+        Me.btn_res_res.UseVisualStyleBackColor = True
         '
         'cbox_destination
         '
@@ -160,7 +160,7 @@ Partial Class reservation
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cbox_destination)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_res_res)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.cbox_reserve_seat_num)
         Me.Controls.Add(Me.txtbox_price)
@@ -175,7 +175,7 @@ Partial Class reservation
     Friend WithEvents txtbox_price As TextBox
     Friend WithEvents cbox_reserve_seat_num As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_res_res As Button
     Friend WithEvents cbox_destination As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label

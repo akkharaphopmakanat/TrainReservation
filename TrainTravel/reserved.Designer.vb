@@ -29,8 +29,8 @@ Partial Class Reservedpage
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_cancel = New System.Windows.Forms.Button()
+        Me.btn_refresh = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -76,31 +76,31 @@ Partial Class Reservedpage
         Me.Column6.Name = "Column6"
         Me.Column6.Width = 300
         '
-        'Button1
+        'btn_cancel
         '
-        Me.Button1.Location = New System.Drawing.Point(228, 321)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(632, 75)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Cancel Reservation"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_cancel.Location = New System.Drawing.Point(228, 321)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(632, 75)
+        Me.btn_cancel.TabIndex = 1
+        Me.btn_cancel.Text = "Cancel Reservation"
+        Me.btn_cancel.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_refresh
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 321)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(210, 75)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Refresh List"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_refresh.Location = New System.Drawing.Point(12, 321)
+        Me.btn_refresh.Name = "btn_refresh"
+        Me.btn_refresh.Size = New System.Drawing.Size(210, 75)
+        Me.btn_refresh.TabIndex = 2
+        Me.btn_refresh.Text = "Refresh List"
+        Me.btn_refresh.UseVisualStyleBackColor = True
         '
         'Reservedpage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(872, 408)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btn_refresh)
+        Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.DataGridView1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -112,12 +112,12 @@ Partial Class Reservedpage
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_cancel As Button
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_refresh As Button
 End Class
